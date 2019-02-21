@@ -22,7 +22,7 @@ Tugas : mengambil data teks di website menggunakan python kemudian disimpan di d
 src = "https://www.imdb.com/chart/boxoffice?ref_=nv_ch_cht"
 page = requests.get(src)
 soup = BeautifulSoup(page.content, 'html.parser')
-
+```
 
 > pada code diatas digunakan untuk mendowload html dari link web tersebut, kemudian 
-> untuk variabel ``` soup mengubah html ke object beautiful soup
+> untuk variabel ``` soup ``` mengubah html ke object beautiful soup
