@@ -28,3 +28,11 @@ soup = BeautifulSoup(page.content, 'html.parser')
 > untuk variabel ``` soup ``` mengubah html ke object beautiful soup
 
 kemudian menggunakan sqlite3 untuk membuat database dan tabel sesuai kolom yang kita inginkan
+```
+koneksi = sqlite3.connect ('imdb.db')
+koneksi.execute ('''create table if not exists film
+                 (judul text not null,
+                 weekend text not null,
+                 gross text not null);''')
+```
+
