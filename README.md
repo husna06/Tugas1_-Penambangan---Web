@@ -1,5 +1,5 @@
-# Tugas1_Penambangan-Web
-Tugas mengambil data di website menggunakan python 
+# Tugas1_ Crawling Data
+Tugas : mengambil data teks di website menggunakan python kemudian disimpan di database
 
 ## Identitas 
 
