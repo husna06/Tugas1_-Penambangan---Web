@@ -26,3 +26,5 @@ soup = BeautifulSoup(page.content, 'html.parser')
 
 > pada code diatas digunakan untuk mendowload html dari link web tersebut, kemudian 
 > untuk variabel ``` soup ``` mengubah html ke object beautiful soup
+
+kemudian menggunakan sqlite3 untuk membuat database dan tabel sesuai kolom yang kita inginkan
