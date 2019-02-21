@@ -1,7 +1,7 @@
-## Tugas1_Penambangan-Web
+# Tugas1_Penambangan-Web
 Tugas mengambil data di website menggunakan python 
 
-# Identitas 
+## Identitas 
 
 > Nama : Husna
 >
