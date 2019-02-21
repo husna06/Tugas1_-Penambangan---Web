@@ -46,7 +46,6 @@ for i in range (len(imdb)):
 > memperjelas tempat data yang mau kita ambil pahami terlebih dahulu di html web. `` judul = judul.getText()`` untuk mengambil 
 > textnya saja dan ``judul = judul.split('\n')[1]`` untuk menghilangkan tab supaya tampilannya lebih cantik dan tetata rapi . 
 
-kemudian menggunakan sqlite3 untuk membuat database dan tabel sesuai kolom yang kita inginkan
 ```
 koneksi = sqlite3.connect ('imdb.db')
 koneksi.execute ('''create table if not exists film
@@ -54,4 +53,13 @@ koneksi.execute ('''create table if not exists film
                  weekend text not null,
                  gross text not null);''')
 ```
+> kemudian menggunakan sqlite3 untuk membuat database dan tabel sesuai kolom yang kita inginkan
 
+```
+koneksi.execute ('insert into film values ("%s","%s","%s")' %(judul,weekend,gross))
+cetak = koneksi.execute ("select * from film")
+for i in cetak:
+    print (i)
+```
+> memasukkan data yang sudah diambil ke dalam database bisa kita gunakan ``insert``  dan untuk mengisi dari database kita
+> bisa gunakan ``select`` . 
