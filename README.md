@@ -23,5 +23,3 @@ src = "https://www.imdb.com/chart/boxoffice?ref_=nv_ch_cht"
 page = requests.get(src)
 soup = BeautifulSoup(page.content, 'html.parser')
 
-> pada code diatas digunakan untuk mendowload html dari link web tersebut, kemudian 
-> untuk variabel ``` soup mengubah html ke object beautiful soup
