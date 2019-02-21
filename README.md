@@ -63,3 +63,6 @@ for i in cetak:
 ```
 > memasukkan data yang sudah diambil ke dalam database bisa kita gunakan ``insert``  dan untuk mengisi dari database kita
 > bisa gunakan ``select`` . 
+
+## catatan
+- [ ] Program tersebut berjalan atau tidak error jika terhubung dengan internet 
