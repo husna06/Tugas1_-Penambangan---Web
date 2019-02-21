@@ -29,11 +29,8 @@ soup = BeautifulSoup(page.content, 'html.parser')
 
 ```
 for i in range (len(imdb)):
-    #mangambil judul 
     judul = imdb[i].find (class_='titleColumn')
-    #mengambil textnya saja 
     judul = judul.getText()
-    #menghilangkan tab supaya tampilannya lebih cantik
     judul = judul.split('\n')[1]
     weekend = imdb[i].find (class_='ratingColumn')
     weekend  = weekend.getText()
